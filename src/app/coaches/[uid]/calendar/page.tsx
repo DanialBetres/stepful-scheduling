@@ -84,7 +84,9 @@ const CoachCalendar = ({ params }: { params: { uid: string } }) => {
       if (docSnap.exists()) {
         const { availableSlots: currentSlotsBooked } = docSnap.data();
         const arr: SlotType[] = [];
-        const availableSlotsArr = Object.entries(currentSlotsBooked);
+        const availableSlotsArr = Object.entries(
+          currentSlotsBooked as { [key: string]: string[] }
+        );
         availableSlotsArr.forEach(([date, slots]) => {
           slots.forEach((slot: string) => {
             arr.push({
