@@ -29,7 +29,7 @@ function classNames(...classes: any) {
   return classes.filter(Boolean).join(" ");
 }
 
-export const CoachCalendar = ({ params }: { params: { uid: string } }) => {
+const CoachCalendar = ({ params }: { params: { uid: string } }) => {
   let today = startOfToday();
   let [selectedDay, setSelectedDay] = useState(today);
   let [currentMonth, setCurrentMonth] = useState(format(today, "MMM-yyyy"));

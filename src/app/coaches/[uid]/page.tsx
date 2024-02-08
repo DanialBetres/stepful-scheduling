@@ -13,7 +13,7 @@ import {
 } from "firebase/firestore";
 import { useEffect, useState } from "react";
 
-export const CoachDashboard = ({ params }: { params: { uid: string } }) => {
+const CoachDashboard = ({ params }: { params: { uid: string } }) => {
   const [bookedMeetings, setBookedMeetings] = useState<{
     past: Meeting[];
     future: Meeting[];
