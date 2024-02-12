@@ -13,7 +13,7 @@ yarn dev
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 ## Technical Architecture
-These were some rought notes I wrote prior to starting to write any code. Didn't necessarily follow everything verbatim:
+These were some rough notes I wrote prior to starting to write any code. Didn't necessarily follow everything verbatim:
 https://docs.google.com/document/d/10GkyoVQX9ECGVAvT_Agsbj3Sn7PsIe5apNvD5inL-nk/edit?usp=sharing
 
 ## How to test
